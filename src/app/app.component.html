@@ -12,4 +12,13 @@
   </form> 
   <!-- <pre>{{resultado|json}}</pre> -->
   
+<br><br>
+
+<table>
+<tr *ngFor="let item of ListaLibros; let impar = odd;let par = even;" [ngClass]="{azul:par,verde:impar}">
+<td>{{item.getNombre()}}</td>
+<br>
+</tr>
+</table>
+
   </div>
