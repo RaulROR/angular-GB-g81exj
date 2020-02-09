@@ -1,0 +1,15 @@
+
+<div >
+
+  {{title}}
+  
+   <form #miForm="ngForm"> <br>
+  Introduzca el nombre del Libro: <br>
+  <input type="text" class="form-control" [(ngModel)]="nombreLibro" name="nombreLibro">
+  
+  <button (click)="onSubmit()"> Buscar</button>
+  
+  </form> 
+  <!-- <pre>{{resultado|json}}</pre> -->
+  
+  </div>
